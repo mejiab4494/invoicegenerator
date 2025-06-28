@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Creator</title>
+    <link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="title">
+        <h1>Invoice Creator</h1>
+        <p>Thanks for choosing us</p>
+    </div>
+    <div class="lower-body">
+         <div class="invoice-selector">
+            <input type="text" id="serviceInput" placeholder="Description" />
+            <input type="number" id="priceInput" placeholder="$$" min="0" step="0.01" />
+            <input type="number" id="taxInput" placeholder="tax" min="0" step="0.01" max="99" />
+            <button id="enterBtn">+</button> 
+        </div>
+        <div class="price">
+            <p>Task</p>
+            <p>Total</p>
+        </div>
+
+        <div id="invoice"></div>
+        
+        <div class="summary">
+            <p>NOTES</p>
+            <p>TOTAL AMOUNT</p>
+        </div>
+        <div class="display-total">
+            <p>We accept cash, Credit Card, or Paypal</p>
+            <p class="tax"></p>
+            <p class="total"></p>
+        </div>
+        <button id="invoiceBtn">Preview</button>
+        <button id="clearBtn">Clear</button>
+    </div>
+   
+    <script type="module" src="script.js"></script>
+</body>
+</html>
